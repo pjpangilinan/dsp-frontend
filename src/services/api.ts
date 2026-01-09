@@ -1,6 +1,6 @@
 import type { AnalysisResult } from '../types';
 
-const API_URL = 'https://dsp.tail841e2c.ts.net:8443';
+const API_URL = 'https://king-prawn-app-576g4.ondigitalocean.app';
 
 export const analyzeFile = async (file: File): Promise<AnalysisResult> => {
   const formData = new FormData();
@@ -36,4 +36,5 @@ export const analyzeFile = async (file: File): Promise<AnalysisResult> => {
     console.error('API Error:', error);
     throw error;
   }
+
 };

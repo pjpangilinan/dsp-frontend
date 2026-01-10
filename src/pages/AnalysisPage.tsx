@@ -63,9 +63,9 @@ export const AnalysisPage: React.FC<AnalysisPageProps> = ({ file, onReset }) => 
 
   // --- HELPER: Determine Risk Level ---
   const getRiskLevel = (probability: number) => {
-    if (probability < 0.30) return 'safe';     // 0-30%
-    if (probability < 0.60) return 'warning';  // 30-60%
-    return 'danger';                           // 60-100%
+    if (probability < 0.45) return 'safe';     
+    if (probability < 0.60) return 'warning';  
+    return 'danger';                           
   };
 
   // --- HELPER: Get Colors based on Risk ---
@@ -240,4 +240,5 @@ export const AnalysisPage: React.FC<AnalysisPageProps> = ({ file, onReset }) => 
       )}
     </div>
   );
+
 };
